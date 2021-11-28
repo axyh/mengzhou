@@ -1,0 +1,12 @@
+<view class="topic">
+  <view class="iconfont icon-topic color_topic"></view>
+  <view class="con">
+    <view class="title">
+      {{topic.title}}
+    </view>
+    <view class="des">{{topic.description}} </view>
+    <view class="count">{{topic.artical_count>0?topic.artical_count + '条内容':''}}</view>
+  </view>
+</view>
+<artical-list list="{{list}}"></artical-list>
+<navigator class="fix_button bg_topic" url="/pages/artical-add/artical-add?topic_id={{topic_id}}">参与</navigator>

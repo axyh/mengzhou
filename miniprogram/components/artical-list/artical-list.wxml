@@ -1,0 +1,37 @@
+<wxs module="filter" src="../../utils/utils.wxs"></wxs>
+<block wx:for="{{list}}" wx:key="index">
+  <navigator url="/pages/artical-detail/artical-detail?artical_id={{item._id}}" class="artical">
+    <view class="top">
+      <image class="avatar" src="{{item.author.avatarUrl}}" mode="aspectFill"></image>
+      <view class="info">
+        <view>{{item.author.nickName}}</view>
+        <view>{{filter.time(item.author.create_time)}}注册</view>
+      </view>
+      <view class="link_style" wx:if="{{item.status===0}}">审核中</view>
+      <view class="link_style" wx:if="{{item.status===-1}}">重审中</view>
+      <view class="link_style" wx:if="{{item.status===-999}}">封禁</view>
+    </view>
+    <view class="content lue3">
+      <text>{{item.content}}</text>
+    </view>
+    <view class="img_box" wx:if="{{item.imgs.length>0}}">
+      <block wx:if="{{item.imgs.length>1}}">
+        <image wx:for="{{item.imgs}}" lazy-load="{{true}}" wx:for-item="i" wx:key="index" class="img" src="{{i}}" mode="aspectFill" catchtap="handle_img" data-url="{{i}}" data-imgs="{{item.imgs}}"></image>
+      </block>
+      <block wx:if="{{item.imgs.length===1}}">
+        <image wx:for="{{item.imgs}}" lazy-load="{{true}}" wx:for-item="i" wx:key="index" class="one_img" src="{{i}}" mode="aspectFill" catchtap="handle_img" data-url="{{i}}" data-imgs="{{item.imgs}}"></image>
+      </block>
+    </view>
+    <view class="topic color_topic" wx:if="{{item.topic._id}}" data-id="{{item.topic._id}}" catchtap="handle_topic">
+      # {{item.topic.title}}
+    </view>
+    <view class="tools">
+      <view>{{filter.time(item.create_time)}}</view>
+      <view class="iconfont icon-commentfill"></view>
+      <view class="count">{{item.comment_count>0?item.comment_count:'评论'}}</view>
+      <view class="iconfont icon-appreciate_fill_light"></view>
+      <view class="count">{{item.collect_count?item.collect_count:'点赞'}}</view>
+    </view>
+  </navigator>
+  <ad wx:if="{{index%20===0&&index>10}}" style="margin: 0 30rpx;" unit-id="adunit-51b87d60dd258635"></ad>
+</block>

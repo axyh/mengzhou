@@ -1,0 +1,34 @@
+@import "../../assets/icons.wxss";
+
+.statusBar {
+  background-color: #eeeeee;
+}
+
+.headCon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 999;
+  position: relative;
+}
+
+.header_back {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30rpx;
+  font-size: 40rpx;
+}
+
+.header_con {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #eeeeee;
+}
+
+.header_pos {
+  width: 100%;
+}

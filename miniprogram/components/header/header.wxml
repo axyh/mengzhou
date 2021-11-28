@@ -1,0 +1,9 @@
+<view class="header_con">
+  <view class="statusBar" style="width:100%;height:{{statusBarHeight}}px;background-color: {{bg}};"></view>
+  <view class="headCon" style="width:{{width}};height:{{safeHeight}}px;background-color: {{bg}};">
+    <view wx:if="{{showBack}}" bindtap="handel_back" class="iconfont icon-back header_back" style="width: {{safeHeight}}px;">
+    </view>
+    <slot></slot>
+  </view>
+</view>
+<view class="header_pos" style="height: {{statusBarHeight+safeHeight}}px;"></view>

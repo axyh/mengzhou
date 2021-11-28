@@ -1,0 +1,85 @@
+.solt {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.solt .avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 30rpx;
+}
+.solt .avatar image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.solt .login {
+  padding: 10rpx 30rpx;
+  border-radius: 8rpx;
+}
+.solt .message {
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 45rpx;
+  background: #eeeeee;
+  border-radius: 100%;
+  padding: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fix_button {
+  background-color: #eeeeee;
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 50rpx;
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+page {
+  background-color: #eeeeee !important;
+}
+.topic_lay {
+  border-radius: 20rpx;
+  background: #ffffff;
+  margin-top: 30rpx;
+}
+.topic_lay .topic_title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.topic_lay .topic_title > span:nth-child(1) {
+  font-size: 50rpx;
+  line-height: 40rpx;
+  margin-right: 20rpx;
+}
+.topic_lay .topic_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.topic_lay .topic_box .topic {
+  width: 260rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 20rpx;
+  background: #eeeeee;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 25rpx;
+  font-weight: 500;
+}

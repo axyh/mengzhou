@@ -1,0 +1,6 @@
+<view>
+  <button wx:if="{{canIUseGetUserProfile}}" type="primary" bindtap="getUserProfile"> 登陆 </button>
+  <button wx:if="{{!canIUseGetUserProfile}}" type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="handel_author_userinfo">
+    登陆
+  </button>
+</view>

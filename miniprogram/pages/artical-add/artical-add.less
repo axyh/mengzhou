@@ -1,0 +1,79 @@
+.textBox {
+  width: 100vw;
+  padding-top: 50rpx;
+  padding-bottom: 100rpx;
+
+  .conArea {
+    width: 650rpx;
+    margin: 0 auto;
+    display: block;
+    caret-color: green;
+    font-size: 35rpx;
+  }
+}
+
+.topic {
+  width: max-content;
+  height: 50rpx;
+  margin: 0 50rpx 20rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40rpx;
+  opacity: .7;
+  font-size: 25rpx;
+  background-color: rgba(80, 177, 157, .3);
+  color: rgba(80, 177, 157, 1);
+  font-weight: 500;
+}
+
+.img_box {
+  width: 650rpx;
+  padding: 0 50rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &>view {
+    width: 205rpx;
+    height: 205rpx;
+    background: #eeeeee;
+    margin-right: 17.5rpx;
+    margin-bottom: 17.5rpx;
+    position: relative;
+
+    &>.delete {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40rpx;
+      height: 40rpx;
+      padding: 10rpx;
+      // background-color: pink;
+      font-size: 40rpx;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &>.iconfont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100rpx;
+    font-weight: 100;
+    color: rgba(0, 0, 0, .4);
+  }
+
+  &>view:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+page {
+  background-color: #ffffff;
+}

@@ -1,0 +1,22 @@
+<wxs module="filter" src="../../utils/utils.wxs"></wxs>
+<block wx:for="{{list}}" wx:key="index">
+  <navigator url="/pages/comment-reply/comment-reply?comment_id={{item._id}}" class="comment">
+    <image class="avatar" src="{{item.sender.avatarUrl}}" mode="aspectFill"></image>
+    <view class="right">
+      <view>{{item.sender.nickName}}</view>
+      <view>{{filter.time(item.create_time)}}</view>
+      <view>
+        {{item.content}}
+      </view>
+      <view wx:if="{{item.reply_comment_id}}">
+        <span style=" color: #3b82f6;">
+          {{item.accepter.nickName}}:
+        </span>
+        {{item.reply_comment.content}}
+      </view>
+    </view>
+  </navigator>
+</block>
+<block wx:if="{{list.length===0}}">
+  <view style="display: flex;justify-content: center;align-items: center;color: #888888;height: 200rpx;">还没有人评论</view>
+</block>

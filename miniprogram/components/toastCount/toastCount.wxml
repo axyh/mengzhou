@@ -1,0 +1,2 @@
+<!--components/toastCount/toastCount.wxml-->
+<span bindtap="handel_count">{{count}}</span>

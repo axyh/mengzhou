@@ -1,0 +1,25 @@
+.top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30rpx 50rpx;
+  margin-bottom: 30rpx;
+}
+.top .avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  margin-right: 30rpx;
+}
+.item {
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  width: 690rpx;
+  height: 110rpx;
+  font-size: 33rpx;
+  margin-bottom: 10rpx;
+}

@@ -1,0 +1,69 @@
+// @import "../../style/icon.wxss";
+@import "../../app.wxss";
+@import "../../assets/commen.wxss";
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 40rpx 10rpx;
+  position: sticky;
+  // top: 0; 
+  background: #eeeeee;
+  color: #888888;
+  font-size: 26rpx;
+}
+
+.content {
+  margin: 0 30rpx 2rpx;
+  padding: 30rpx 30rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+
+  .icon {
+    font-size: 20rpx;
+    line-height: 50rpx;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    // width: 350rpx;
+    padding: 0 20rpx;
+
+    &>view {
+      width: 350rpx;
+    }
+
+    &>view:nth-child(1) {
+      line-height: 50rpx;
+    }
+
+    &>view:nth-child(2) {
+      color: #888888;
+      font-size: 25rpx;
+    }
+  }
+
+  .amount {
+    width: 200rpx;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 50rpx;
+  }
+}
+
+.top_radius {
+  border-top-left-radius: 18rpx;
+  border-top-right-radius: 18rpx;
+}
+
+.bottom_radius {
+  border-bottom-left-radius: 18rpx;
+  border-bottom-right-radius: 18rpx;
+}

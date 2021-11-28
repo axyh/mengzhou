@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/artical-detail/artical-detail",
+    "pages/artical-list/artical-list",
+    "pages/artical-list-my/artical-list-my",
+    "pages/artical-add/artical-add",
+    "pages/user-center/user-center",
+    "pages/comment-reply/comment-reply",
+    "pages/message-list/message-list"
+  ],
+  "subpackages": [{
+      "root": "model-topic",
+      "pages": [
+        "topic-detail/topic-detail",
+        "topic-list/topic-list"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTitleText": "河阳广场",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "header": "/components/header/header",
+    "toast-count": "/components/toastCount/toastCount",
+    "note-list": "/components/note-list/note-list",
+    "artical-list": "/components/artical-list/artical-list",
+    "comment-list": "/components/comment-list/comment-list",
+    "placeholder": "/components/placeholder/placeholder"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

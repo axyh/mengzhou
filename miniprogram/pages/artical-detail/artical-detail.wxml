@@ -1,0 +1,51 @@
+<wxs module="filter" src="../../utils/utils.wxs"></wxs>
+<view wx:if="{{detail!==null}}" style="background-color: #ffffff;">
+  <view class="top">
+    <image class="avatar" src="{{detail.author.avatarUrl}}" mode="aspectFill"></image>
+    <view class="info">
+      <view>{{detail.author.nickName}}</view>
+      <view>{{filter.time(detail.author.create_time)}}注册</view>
+    </view>
+    <view class="link_style" wx:if="{{detail.status===0}}">审核中</view>
+    <view class="link_style" wx:if="{{detail.status===-1}}">重审中</view>
+    <view class="link_style" wx:if="{{detail.status===-999}}">封禁</view>
+  </view>
+  <view class="content">
+    <text user-select="{{true}}">{{detail.content}}</text>
+  </view>
+  <view class="img_box" wx:if="{{detail.imgs.length>0}}">
+    <block wx:if="{{detail.imgs.length>1}}">
+      <image bindtap="handle_img" wx:for="{{detail.imgs}}" wx:key="index" data-url="{{item}}" class="img" src="{{item}}" mode="aspectFill"></image>
+    </block>
+    <block wx:if="{{detail.imgs.length===1}}">
+      <image bindtap="handle_img" wx:for="{{detail.imgs}}" wx:key="index" data-url="{{item}}" class="one_img" src="{{item}}" mode="aspectFill"></image>
+    </block>
+  </view>
+  <view class="topic color_topic" wx:if="{{detail.topic._id}}" data-id="{{detail.topic._id}}" catchtap="handle_topic">
+    # {{detail.topic.title}}
+  </view>
+  <view class="tools">
+    <view>{{filter.time(detail.create_time)}}</view>
+    <button plain type="default" size="mini" style="display: flex;border: 0;padding: 0 30rpx;color: #808080;" open-type="share">
+      <span class="iconfont icon-wechat-fill"></span>
+      <span>分享</span>
+    </button>
+    <button plain type="default" size="mini" style="display: flex;border: 0;padding: 0 30rpx;color: #808080;" bindtap="handel_reply_focus">
+      <span class="iconfont icon-commentfill"></span>
+      <span>{{detail.comment_count>0?detail.comment_count:'评论'}}</span>
+    </button>
+    <button plain type="default" size="mini" style="display: flex;border: 0;padding: 0 30rpx;color: #808080;" bindtap="handle_collect">
+      <span wx:if="{{detail.collect_current}}" class="iconfont icon-appreciate_fill_light color_lose"></span>
+      <span wx:if="{{!detail.collect_current}}" class="iconfont icon-appreciate_fill_light"></span>
+      <span>{{detail.collect_count>0?detail.collect_count:'点赞'}}</span>
+    </button>
+  </view>
+  <ad unit-id="adunit-865c21878c434cb3"></ad>
+  <view class="comment_title">评论 {{detail.comment_count}}</view>
+  <comment-list list="{{list}}"></comment-list>
+  <view class="hudong" style="padding-bottom:{{safe_bottom>0?safe_bottom+'px':'20rpx'}}">
+    <input focus="{{reply_focus}}" confirm-type="send" class="edit_box" cursor-spacing="100" placeholder="写评论" bindconfirm="handle_comment" bindinput="bindinput" value="{{content}}">
+    </input>
+  </view>
+</view>
+<view style="width: 100%;height: 200rpx;"></view>

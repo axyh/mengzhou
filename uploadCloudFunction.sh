@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e dev-money --n quickstartFunctions --r --project "/Users/finture/work-mine/jizhang" --report_first && "/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e pro-money --n quickstartFunctions --r --project "/Users/finture/work-mine/jizhang" --report

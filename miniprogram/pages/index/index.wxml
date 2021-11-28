@@ -1,0 +1,30 @@
+<header>
+  <view class="solt">
+    <navigator wx:if="{{user._id}}" url="/pages/user-center/user-center" class="avatar hover ">
+      <image mode="aspectFit" src="{{user.avatarUrl}}"></image>
+    </navigator>
+    <navigator wx:if="{{user==null}}" url="/pages/login/login" class="link_style login">
+      去登陆
+    </navigator>
+    <view style="flex: 1;"></view>
+    <navigator url="/pages/message-list/message-list" class="iconfont icon-shouye {{message_count>0?'color_lose':''}} message">
+    </navigator>
+
+  </view>
+</header>
+
+
+
+<navigator class="iconfont icon-edit fix_button" url="/pages/artical-add/artical-add"></navigator>
+<view wx:if="{{topicList.length>0}}" class="layout_size topic_lay">
+  <view class="topic_title">
+    <span class="iconfont icon-topic color_topic"></span>
+    <span class="title_font">话题讨论</span>
+  </view>
+  <view class="topic_box">
+    <navigator url="/model-topic/topic-detail/topic-detail?topic_id={{item._id}}" wx:for="{{topicList}}" wx:key="index" class="topic lue"># {{item.title}}</navigator>
+    <navigator url="/model-topic/topic-list/topic-list" class="topic link_style" style="background-color: #ffffff;text-align: center;">全部话题</navigator>
+  </view>
+</view>
+
+<artical-list list="{{list}}"></artical-list>

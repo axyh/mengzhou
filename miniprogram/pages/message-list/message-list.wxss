@@ -1,0 +1,37 @@
+.comment {
+  padding: 20rpx 30rpx;
+  background-color: #ffffff;
+  margin-bottom: 3rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.comment > .avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  margin-right: 20rpx;
+}
+.comment .con {
+  flex: 1;
+}
+.comment .con .info {
+  margin-bottom: 10rpx;
+  color: #888888;
+}
+.comment .con .info > span {
+  padding: 0 10rpx;
+}
+.comment .con .info > span:nth-child(1) {
+  padding-left: 0;
+}
+.comment .con .info .a_con {
+  color: #888888;
+  background-color: #eaecf1;
+  margin: 10rpx 0;
+}
+.comment .con .time {
+  font-size: 25rpx;
+  color: #888888;
+  margin-top: 10rpx;
+}

@@ -1,0 +1,13 @@
+<wxs module="filter" src="../../utils/utils.wxs"></wxs>
+<view class="hudong" style="padding-bottom:{{safe_bottom>0?safe_bottom+'px':'20rpx'}}">
+  <input show-confirm-bar="{{true}}" confirm-type="send" class="edit_box" cursor-spacing="100" placeholder="点击回复 {{comment.sender.nickName}}" bindconfirm="handle_comment" bindinput="bindinput" value="{{content}}" placeholder-style="color:#3b82f6;">
+  </input>
+</view>
+<view class="comment">
+  <image class="avatar" src="{{comment.sender.avatarUrl}}" mode="aspectFill"></image>
+  <view class="right">
+    <view>{{comment.sender.nickName}}</view>
+    <view>{{filter.time(comment.create_time)}}</view>
+    <view>{{comment.content}}</view>
+  </view>
+</view>

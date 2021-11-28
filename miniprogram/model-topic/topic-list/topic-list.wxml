@@ -1,0 +1,7 @@
+<navigator wx:for="{{list}}" url="/model-topic/topic-detail/topic-detail?topic_id={{item._id}}" wx:key="index" class="topic layout_size">
+  <view class="iconfont icon-topic color_topic"></view>
+  <view class="con">
+    <view class="title">{{item.title}} {{item.artical_count>0?item.artical_count:''}}</view>
+    <view class="des">{{item.description}} </view>
+  </view>
+</navigator>

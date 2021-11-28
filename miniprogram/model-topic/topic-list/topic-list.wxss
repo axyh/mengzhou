@@ -1,0 +1,14 @@
+.topic {
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.topic > .iconfont {
+  font-size: 45rpx;
+  margin-right: 20rpx;
+}
+.topic .con .title {
+  margin-bottom: 10rpx;
+}

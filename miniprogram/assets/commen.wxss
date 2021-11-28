@@ -1,0 +1,64 @@
+.link_style {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 30rpx;
+}
+
+.color_lose {
+  color: #ec705b;
+}
+
+.color_win {
+  color: #07c062;
+}
+
+.bg_win {
+  background-color: #50b19d;
+  color: #ffffff;
+}
+
+.bg_topic {
+  background-color: rgba(80, 177, 157, 1);
+  color: #ffffff;
+}
+
+.color_topic {
+  color: rgba(80, 177, 157, 1);
+}
+
+.bg_lose {
+  background-color: #ec705b;
+  color: #ffffff;
+}
+
+.lue {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  white-space: normal !important;
+  word-wrap: break-word;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.lue3 {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  white-space: normal !important;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.title_font {
+  font-size: 30rpx;
+  font-weight: 500;
+  line-height: 30rpx;
+}
+
+.layout_size {
+  padding: 20rpx 30rpx;
+  margin: 0 30rpx;
+  background-color: #ffffff;
+}

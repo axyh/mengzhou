@@ -1,0 +1,27 @@
+<wxs module="filter" src="../../utils/utils.wxs"></wxs>
+<block wx:for="{{list}}" wx:key="index">
+  <navigator url="/pages/artical-detail/artical-detail?artical_id={{item.artical._id}}" wx:if="{{item.type==='collect'}}" class="comment">
+    <image class="avatar" src="{{item.sender.avatarUrl}}" mode="aspectFill"></image>
+    <view class="con">
+      <view class="info">
+        <span class="link_style"> {{item.sender.nickName}} </span>
+        👍了你的内容
+        <span class="a_con lue"> {{item.artical.content}} </span>
+      </view>
+      <view class="time">{{filter.time(item.create_time)}}</view>
+    </view>
+  </navigator>
+  <navigator url="/pages/comment-reply/comment-reply?comment_id={{item.comment._id}}" wx:if="{{item.type==='comment'}}" class="comment">
+    <image class="avatar" src="{{item.sender.avatarUrl}}" mode="aspectFill"></image>
+    <view class="con">
+      <view class="info">
+        <span class="link_style"> {{item.sender.nickName}} </span>
+        在
+        <span class="a_con lue"> {{item.artical.content}} </span>
+        中回复你:
+      </view>
+      <view>{{item.comment.content}}</view>
+      <view class="time">{{filter.time(item.create_time)}}</view>
+    </view>
+  </navigator>
+</block>

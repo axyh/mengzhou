@@ -1,0 +1,19 @@
+<wxs module="filter" src="../../utils/utils.wxs"></wxs>
+
+<block wx:for="{{list}}" wx:key="index">
+  <view class="top" style="top:{{custom?navHeight:0}}px" wx:if="{{item.change_time2!==list[index-1].change_time2}}">
+    <view>{{item.change_time2}}</view>
+    <view>
+      <span>收: {{filter.count(item.allincome)}}</span>
+      <span style="margin-left:30rpx">支: {{filter.count(item.allexpend)}}</span>
+    </view>
+  </view>
+  <view data-id="{{item._id}}" data-item="{{item}}" capture-bind:longpress="handel_delete" class="content {{list[index-1].change_time2!==list[index].change_time2?'top_radius':''}} {{list[index+1].change_time2!==list[index].change_time2?'bottom_radius':''}}">
+    <view class="icon {{item.type==='income'?'color_win':'color_lose'}}">●</view>
+    <view class="info">
+      <view>{{item.tags}}</view>
+      <view class="lue" wx:if="{{item.remark}}">{{item.remark}}</view>
+    </view>
+    <view class="amount lue">{{filter.count(item.type==='expend'?'-'+item.expend:'+'+item.income)}}</view>
+  </view>
+</block>

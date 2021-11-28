@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2871548 */
+  src: url('//at.alicdn.com/t/font_2871548_1ttm97vrzgf.woff2?t=1637917243050') format('woff2'),
+       url('//at.alicdn.com/t/font_2871548_1ttm97vrzgf.woff?t=1637917243050') format('woff'),
+       url('//at.alicdn.com/t/font_2871548_1ttm97vrzgf.ttf?t=1637917243050') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-topic:before {
+  content: "\e73f";
+}
+
+.icon-wechat-fill:before {
+  content: "\e883";
+}
+
+.icon-commentfill:before {
+  content: "\e666";
+}
+
+.icon-forwardfill:before {
+  content: "\e6ea";
+}
+
+.icon-appreciate_fill_light:before {
+  content: "\e7e2";
+}
+
+.icon-add_light:before {
+  content: "\e7dc";
+}
+
+.icon-back_android:before {
+  content: "\e7ed";
+}
+
+.icon-add:before {
+  content: "\e6da";
+}
+
+.icon-edit:before {
+  content: "\e649";
+}
+
+.icon-roundclosefill:before {
+  content: "\e658";
+}
+
+.icon-discover:before {
+  content: "\e67e";
+}
+
+.icon-shouye:before {
+  content: "\e629";
+}
+
+.icon-tag-heart:before {
+  content: "\e8d7";
+}
+
+.icon-search:before {
+  content: "\e946";
+}
+
+.icon-mobile:before {
+  content: "\e704";
+}
+
+.icon-redpacket:before {
+  content: "\e6e0";
+}
+
+.icon-moneybag:before {
+  content: "\e7d1";
+}
+
+.icon-vipcard:before {
+  content: "\e6ee";
+}
+
+.icon-jiantou_zuoshang:before {
+  content: "\eb0c";
+}
+
+.icon-jiantou_youxia:before {
+  content: "\eb0d";
+}
+
+.icon-dian:before {
+  content: "\ec1e";
+}
+
+.icon-unfold:before {
+  content: "\e661";
+}
+
+.icon-pay:before {
+  content: "\e673";
+}
+
+.icon-back:before {
+  content: "\e679";
+}
+
+.icon-more:before {
+  content: "\e684";
+}
+
+.icon-right:before {
+  content: "\e6a3";
+}
+
+.icon-home:before {
+  content: "\e6b8";
+}
+
+.icon-homefill:before {
+  content: "\e6bb";
+}
+
+.icon-rankfill:before {
+  content: "\e721";
+}
+
+.icon-rank:before {
+  content: "\e722";
+}

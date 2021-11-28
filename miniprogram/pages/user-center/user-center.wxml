@@ -1,0 +1,12 @@
+<view class="top">
+  <image class="avatar" src="{{user.avatarUrl}}" mode="aspectFill"></image>
+  <view>{{user.nickName}}</view>
+</view>
+<navigator class="item" url="/pages/artical-list-my/artical-list-my">
+  <view>我的小目标</view>
+  <view class="iconfont icon-right"></view>
+</navigator>
+
+<button class="link_style" open-type="contact" type="default" style="border: none;margin-top: 100rpx;background: none;">
+  客服
+</button>

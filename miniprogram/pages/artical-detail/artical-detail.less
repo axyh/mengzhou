@@ -1,0 +1,143 @@
+.top {
+  background-color: #ffffff;
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .avatar {
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 100%;
+    margin-right: 20rpx;
+  }
+
+  .info {
+    flex: 1;
+
+    &>view:nth-child(1) {
+      font-size: 28rpx;
+    }
+
+    &>view:nth-child(2) {
+      font-size: 23rpx;
+      color: #888888;
+      line-height: 40rpx;
+    }
+  }
+}
+
+.content {
+  padding: 0 30rpx 20rpx;
+  font-size: 33rpx;
+  color: #2a2d34;
+  background: #ffffff;
+}
+
+.img_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 30rpx 20rpx;
+  background-color: #ffffff;
+
+  &>.img {
+    width: 220rpx;
+    height: 220rpx;
+    margin-right: 15rpx;
+    margin-bottom: 15rpx;
+    border-radius: 5rpx;
+  }
+
+  &>.img:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  &>.one_img {
+    width: 350rpx;
+    height: 350rpx;
+    margin-bottom: 15rpx;
+    border-radius: 5rpx;
+  }
+}
+.topic {
+  width: max-content;
+  height: 45rpx;
+  margin: 0 30rpx 20rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40rpx;
+  opacity: .7;
+  font-size: 25rpx;
+  background-color: rgba(80, 177, 157, .3);
+  color: rgba(80, 177, 157, 1);
+  font-weight: 500;
+}
+.tools {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20rpx;
+
+  &>view {
+    flex: 1;
+    padding: 0 30rpx;
+    font-size: 25rpx;
+    color: #808080;
+  }
+
+  &>button {
+    border: 0;
+    font-size: 25rpx;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #808080;
+
+    &>span:nth-child(1) {
+      font-size: 38rpx;
+      margin-right: 10rpx;
+    }
+
+    &>span:nth-child(2) {
+      font-size: 27rpx;
+    }
+  }
+}
+
+
+.hudong {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 750rpx;
+  padding: 20rpx 30rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #ffffff;
+  align-items: flex-start;
+  box-shadow: 0 0 4px 0 rgba(203, 203, 203, 0.50);
+  box-sizing: border-box;
+
+  &>.edit_box {
+    display: block;
+    width: 650rpx;
+    height: 60rpx;
+    background-color: #eeeeee;
+    border-radius: 10rpx;
+    padding: 10rpx 20rpx;
+  }
+}
+
+.comment_title {
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  background-color: #ffffff;
+}

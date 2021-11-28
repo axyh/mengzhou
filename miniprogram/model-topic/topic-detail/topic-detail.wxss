@@ -1,0 +1,37 @@
+.topic {
+  border-radius: 20rpx;
+  margin: 30rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30rpx;
+  background: #ffffff;
+}
+.topic > .iconfont {
+  font-size: 45rpx;
+  margin-right: 20rpx;
+}
+.topic .con .title {
+  margin-bottom: 10rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.topic .con .des {
+  margin-bottom: 10rpx;
+}
+.topic .con .count {
+  color: #888888;
+  font-size: 25rpx;
+}
+.fix_button {
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}

@@ -1,0 +1,55 @@
+.hudong {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 750rpx;
+  padding: 20rpx 30rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #eeeeee;
+  box-shadow: 0 0 4px 0 rgba(203, 203, 203, 0.50);
+  box-sizing: border-box;
+
+  &>.edit_box {
+    display: block;
+    width: 650rpx;
+    height: 60rpx;
+    background-color: #ffffff;
+    border-radius: 10rpx;
+    padding: 10rpx 20rpx;
+  }
+}
+
+.comment {
+  padding: 20rpx 30rpx;
+  // background-color: #ffffff;
+  margin: 2rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .avatar {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 100%;
+    margin-right: 30rpx;
+  }
+
+  .right {
+    &>view:nth-child(1) {
+      height: 40rpx;
+    }
+
+    &>view:nth-child(2) {
+      height: 40rpx;
+      font-size: 25rpx;
+      color: #888888;
+      margin-bottom: 20rpx;
+    }
+  }
+}
+page{
+  background-color: #ffffff;
+}

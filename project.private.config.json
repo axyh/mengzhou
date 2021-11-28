@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "artical-detail",
+          "pathName": "pages/artical-detail/artical-detail",
+          "query": "artical_id=fa4fe87261a30d1e0081b4da56e13bfc",
+          "scene": null
+        },
+        {
+          "name": "artical-list",
+          "pathName": "pages/artical-list/artical-list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "user-center",
+          "pathName": "pages/user-center/user-center",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "user-center",
+          "pathName": "pages/user-center/user-center",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "artical-add",
+          "pathName": "pages/artical-add/artical-add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "message",
+          "pathName": "pages/message-list/message-list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "topic-list",
+          "pathName": "model-topic/topic-list/topic-list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "topic-detail",
+          "pathName": "model-topic/topic-detail/topic-detail",
+          "query": "topic_id=3ba7a66861a05a210004a37a7111bae0",
+          "scene": null
+        },
+        {
+          "name": "artical-add",
+          "pathName": "pages/artical-add/artical-add",
+          "query": "topic_id=3ba7a66861a05a210004a37a7111bae0",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
